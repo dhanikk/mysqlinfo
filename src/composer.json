@@ -1,0 +1,36 @@
+{
+    "name": "itpathsolutions/databaseinfo",
+    "description": "Database information",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Itpathsolutions\\Databaseinfo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dhanik Keraliya"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^10.0|^11.0"
+    },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "Itpathsolutions\\Databaseinfo\\DatabaseInfoServiceProvider",
+                "Itpathsolutions\\Databaseinfo\\QueryLoggerServiceProvider"
+
+            ]
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php artisan vendor:publish --provider=\"Itpathsolutions\\Databaseinfo\\DatabaseInfoServiceProvider\" --tag=config",
+            "@php artisan vendor:publish --provider=\"Itpathsolutions\\Databaseinfo\\QueryLoggerServiceProvider\" --tag=config"
+        ]
+    },
+    "version": "1.0.0"
+}
