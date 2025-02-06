@@ -1,6 +1,6 @@
 <?php
 
-namespace Itpathsolutions\Databaseinfo\Http\Controllers;
+namespace Itpathsolutions\Mysqlinfo\Http\Controllers;
 
 abstract class Controller
 {

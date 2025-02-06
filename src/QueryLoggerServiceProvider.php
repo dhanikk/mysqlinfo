@@ -1,6 +1,6 @@
 <?php
 
-namespace Itpathsolutions\Databaseinfo;
+namespace Itpathsolutions\Mysqlinfo;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
@@ -24,7 +24,7 @@ class QueryLoggerServiceProvider extends ServiceProvider
     public function boot(): void
     {
         if (config('app.debug')) { // Enable query logging only in debug mode
-            \DB::listen(function ($query){
+            DB::listen(function ($query){
                 static $slowQueryThreshold = 100;
                 static $modelTables = null;
 

@@ -2,7 +2,7 @@
 
 @section('phpinfo::content')
 <div class="container mt-5">
-    <h1 class="text-center">Database Information</h1> 
+    <h1 class="text-center">Mysql Information</h1> 
     <div class="row mt-5">    
         <div class="col-md-2">
             <div class="card card-01">

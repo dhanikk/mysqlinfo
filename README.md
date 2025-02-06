@@ -17,10 +17,10 @@ To install the **mysqlinfo** package, follow these steps:
     1. Open your terminal.   
     2. Run the following Composer command: **composer require itpathsolutions/mysqlinfo**  
     3. Write this command to publish the vendor: **php artisan vendor:publish**  
-    4. Route: **localhost:8000/dashboard/database-info**   
+    4. Route: **localhost:8000/dashboard/mysql-info**   
 
 
 ## **Usage**  
 
-Once the package is installed, navigate to **localhost:8000/dashboard/database-info** in your browser to view detailed database information. The page will display information such as database size, table data, query performance, and server status based on the logged information from the package.  
+Once the package is installed, navigate to **localhost:8000/dashboard/mysql-info** in your browser to view detailed database information. The page will display information such as database size, table data, query performance, and server status based on the logged information from the package.  
 

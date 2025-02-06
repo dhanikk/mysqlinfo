@@ -1,6 +1,6 @@
 <?php
 
-namespace Itpathsolutions\Databaseinfo\Http\Controllers;
+namespace Itpathsolutions\Mysqlinfo\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -27,7 +27,7 @@ class PHPServerController extends Controller
         return $errorReporting !== 0 && (strtolower($displayErrors) === '1' || strtolower($displayErrors) === 'on');
     }
     
-    public function dbinfo() {
+    public function mysqlinfo() {
 
         $collations = DB::table('information_schema.collations')
         ->select('*')
@@ -166,7 +166,7 @@ class PHPServerController extends Controller
             'trafficStats' => $trafficStats,
             'collations' => $collations
         ];
-        return view('phpinfo::database', compact('dbinfo'));
+        return view('mysqlinfo::database', compact('dbinfo'));
  
     }
 

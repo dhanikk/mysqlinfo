@@ -1,11 +1,11 @@
 {
-    "name": "itpathsolutions/databaseinfo",
-    "description": "Database information",
+    "name": "itpathsolutions/mysqlinfo",
+    "description": "Mysql information",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Itpathsolutions\\Databaseinfo\\": "packages/Itpathsolutions/Databaseinfo/src/"
+            "Itpathsolutions\\Mysqlinfo\\": "packages/Itpathsolutions/Mysqlinfo/src/"
         }
     },
     "authors": [
@@ -20,16 +20,16 @@
     "extra": {
         "laravel":{
             "providers":[
-                "Itpathsolutions\\Databaseinfo\\DatabaseInfoServiceProvider",
-                "Itpathsolutions\\Databaseinfo\\QueryLoggerServiceProvider"
+                "Itpathsolutions\\Mysqlinfo\\MysqlInfoServiceProvider",
+                "Itpathsolutions\\Mysqlinfo\\QueryLoggerServiceProvider"
 
             ]
         }
     },
     "scripts": {
         "post-install-cmd": [
-            "@php artisan vendor:publish --provider=\"Itpathsolutions\\Databaseinfo\\DatabaseInfoServiceProvider\" --tag=config",
-            "@php artisan vendor:publish --provider=\"Itpathsolutions\\Databaseinfo\\QueryLoggerServiceProvider\" --tag=config"
+            "@php artisan vendor:publish --provider=\"Itpathsolutions\\Mysqlinfo\\MysqlInfoServiceProvider\" --tag=config",
+            "@php artisan vendor:publish --provider=\"Itpathsolutions\\Mysqlinfo\\QueryLoggerServiceProvider\" --tag=config"
         ]
     },
     "version": "1.0.0"
