@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Itpathsolutions\\Mysqlinfo\\": "packages/Itpathsolutions/Mysqlinfo/src/"
+            "Itpathsolutions\\Mysqlinfo\\": "src/"
         }
     },
     "authors": [
@@ -32,5 +32,5 @@
             "@php artisan vendor:publish --provider=\"Itpathsolutions\\Mysqlinfo\\QueryLoggerServiceProvider\" --tag=config"
         ]
     },
-    "version": "1.0.2"
+    "version": "1.0.3"
 }
