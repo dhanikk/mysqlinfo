@@ -1,6 +1,6 @@
-@extends('phpinfo::layouts.app')
+@extends('mysqlinfo::layouts.app')
 
-@section('phpinfo::content')
+@section('mysqlinfo::content')
 <div class="container mt-5">
     <h1 class="text-center">Mysql Information</h1> 
     <div class="row mt-5">    
@@ -513,7 +513,7 @@
     </div>
 </div>
 @endsection
-@section('phpinfo::script')
+@section('mysqlinfo::script')
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             fetchProcessList();
