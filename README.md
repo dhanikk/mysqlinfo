@@ -14,12 +14,15 @@ The **mysqlinfo** package provides valuable insights into your MySQL database, s
 
 ## **Installation**  
 To install the **mysqlinfo** package, follow these steps:  
-    1. Open your terminal.   
-    2. Run the following Composer command:  
-    <pre><code class="language-bash">composer require itpathsolutions/mysqlinfo</code></pre>  
-    3. Write this command to publish the vendor:   
+    1. Open the terminal and run the following command:  
+    <pre><code class="language-bash">composer require itpathsolutions/mysqlinfo</code></pre>   
+    2. Run the following command to publish the vendor files:  
     <pre><code class="language-bash">php artisan vendor:publish</code></pre>  
-    4. Route:  
-    <pre><code class="language-bash">localhost:8000/mysql-info</code></pre>   
+    3. To check the plugin, open the following URL in your browser:  
+    <pre><code class="language-bash">localhost:8000/mysql-info</code></pre>  
+
+## **You may also find our other package useful:**  
+[PHP Info Package 🚀](https://packagist.org/packages/itpathsolutions/phpinfo)  
+
 
 
