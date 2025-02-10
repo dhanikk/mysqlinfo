@@ -28,18 +28,17 @@ To install the **mysqlinfo** package, follow these steps:
     3. To check the plugin, open the following URL in your browser:  
     <pre><code class="language-bash">localhost:8000/mysql-info</code></pre>  
 
-## 🏷️  
-<p>
-<a href="https://packagist.org/search/?tags=mysql">#MySQL</a>    
-<a href="https://packagist.org/search/?tags=database">#Database</a>    
-<a href="https://packagist.org/search/?tags=performance-monitoring">#PerformanceMonitoring</a>    
-<a href="https://packagist.org/search/?tags=laravel">#Laravel</a>    
-<a href="https://packagist.org/search/?tags=php">#PHP</a>    
-<a href="https://packagist.org/search/?tags=query-optimization">#QueryOptimization</a>    
-<a href="https://packagist.org/search/?tags=mysql-admin">#MySQLAdmin</a>    
-<a href="https://packagist.org/search/?tags=server-monitoring">#ServerMonitoring</a>    
-<a href="https://packagist.org/search/?tags=devops">#DevOps</a>    
-<a href="https://packagist.org/search/?tags=database-management">#DatabaseManagement</a> 
+<p>🏷️ &nbsp;
+<a href="https://packagist.org/search/?tags=mysql">#MySQL</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=database">#Database</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=performance-monitoring">#PerformanceMonitoring</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=laravel">#Laravel</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=php">#PHP</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=query-optimization">#QueryOptimization</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=mysql-admin">#MySQLAdmin</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=server-monitoring">#ServerMonitoring</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=devops">#DevOps</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=database-management">#DatabaseManagement</a>  
 </p>  
 
 ## **You may also find our other useful package:**  
