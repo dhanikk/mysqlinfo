@@ -13,6 +13,20 @@
             "name": "Dhanik Keraliya"
         }
     ],
+    "keywords": [
+        "mysql",
+        "database",
+        "itpathsolutions",
+        "performance-monitoring",
+        "laravel",
+        "php",
+        "query-optimization",
+        "mysql-admin",
+        "server-monitoring",
+        "devops",
+        "database-management",
+        "mysqlinfo"
+    ],
     "require": {
         "php": "^8.0",
         "illuminate/support": "^9.0|^10.0|^11.0"
@@ -32,5 +46,5 @@
             "@php artisan vendor:publish --provider=\"Itpathsolutions\\Mysqlinfo\\QueryLoggerServiceProvider\" --tag=config"
         ]
     },
-    "version": "1.0.8"
+    "version": "1.0.9"
 }

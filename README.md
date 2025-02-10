@@ -1,6 +1,13 @@
-# mysqlinfo  
+# 🛠️ Mysqlinfo - MySQL Performance Monitoring & Query Insights for Laravel  
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/itpathsolutions/mysqlinfo/main/assets/mysqlinfo-banner.webp" alt="mysqlinfo" width="600" height="300">
+</p>  
 
 The **mysqlinfo** package provides valuable insights into your MySQL database, such as connection details, table sizes, row counts, indexes, and query performance. This package is designed to help you monitor and troubleshoot database issues by logging queries, execution times, and analyzing server status. Additionally, it tracks schema details like table collations and supported character sets to ensure efficient database management and query execution.  
+
+## **⚠️ Security Warning**
+This package is for admin use only. Unauthorized access may expose sensitive database information. Restrict access using authentication and proper security measures.  
 
 ## **Features:**  
 - **Real-time MySQL database performance monitoring.**  
@@ -21,8 +28,19 @@ To install the **mysqlinfo** package, follow these steps:
     3. To check the plugin, open the following URL in your browser:  
     <pre><code class="language-bash">localhost:8000/mysql-info</code></pre>  
 
+## 🏷️  
+<p>
+<a href="https://packagist.org/search/?tags=mysql">#MySQL</a> |  
+<a href="https://packagist.org/search/?tags=database">#Database</a> |  
+<a href="https://packagist.org/search/?tags=performance-monitoring">#PerformanceMonitoring</a> |  
+<a href="https://packagist.org/search/?tags=laravel">#Laravel</a> |  
+<a href="https://packagist.org/search/?tags=php">#PHP</a> |  
+<a href="https://packagist.org/search/?tags=query-optimization">#QueryOptimization</a> |  
+<a href="https://packagist.org/search/?tags=mysql-admin">#MySQLAdmin</a> |  
+<a href="https://packagist.org/search/?tags=server-monitoring">#ServerMonitoring</a> |  
+<a href="https://packagist.org/search/?tags=devops">#DevOps</a> |  
+<a href="https://packagist.org/search/?tags=database-management">#DatabaseManagement</a>
+</p>  
+
 ## **You may also find our other useful package:**  
 [PHP Info Package 🚀](https://packagist.org/packages/itpathsolutions/phpinfo)  
-
-
-
