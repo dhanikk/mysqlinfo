@@ -1,7 +1,7 @@
 # 🛠️ Mysqlinfo - MySQL Performance Monitoring & Query Insights for Laravel  
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/dhanikk/mysqlinfo/main/assets/mysql-preview.png" alt="mysqlinfo" width="100%" height="300">
+  <img src="https://raw.githubusercontent.com/dhanikk/mysqlinfo/main/assets/mysql-preview.png" alt="mysqlinfo" width="100%" height="100%">
 </p>
  
 
