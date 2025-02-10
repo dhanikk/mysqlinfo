@@ -1,14 +1,14 @@
 # 🛠️ Mysqlinfo - MySQL Performance Monitoring & Query Insights for Laravel  
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/dhanikk/mysqlinfo/main/assets/mysqlinfo-banner.webp" alt="mysqlinfo" width="600" height="300">
+  <img src="https://raw.githubusercontent.com/dhanikk/mysqlinfo/main/assets/mysql-preview.png" alt="mysqlinfo" width="100%" height="300">
 </p>
  
 
 The **mysqlinfo** package provides valuable insights into your MySQL database, such as connection details, table sizes, row counts, indexes, and query performance. This package is designed to help you monitor and troubleshoot database issues by logging queries, execution times, and analyzing server status. Additionally, it tracks schema details like table collations and supported character sets to ensure efficient database management and query execution.  
 
 ## **⚠️ Security Warning**
-This package is for admin use only. Unauthorized access may expose sensitive database information. Restrict access using authentication and proper security measures.  
+This package does not include any built-in security measures and is intended for admin use only. It exposes sensitive database details and query execution data, which could pose a security risk if accessed by unauthorized users.Ensure that this package is only used in a secure environment and not exposed to public or unauthorized access.  
 
 ## **Features:**  
 - **Real-time MySQL database performance monitoring.**  
