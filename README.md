@@ -28,7 +28,7 @@ To install the **mysqlinfo** package, follow these steps:
     3. To check the plugin, open the following URL in your browser:  
     <pre><code class="language-bash">localhost:8000/mysql-info</code></pre>  
 
-<p>🏷️ &nbsp;
+<p>🏷️ 
 <a href="https://packagist.org/search/?tags=mysql">#MySQL</a>&nbsp;  
 <a href="https://packagist.org/search/?tags=database">#Database</a>&nbsp;  
 <a href="https://packagist.org/search/?tags=performance-monitoring">#PerformanceMonitoring</a>&nbsp;  
