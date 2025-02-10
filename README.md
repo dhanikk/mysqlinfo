@@ -30,16 +30,16 @@ To install the **mysqlinfo** package, follow these steps:
 
 ## 🏷️  
 <p>
-<a href="https://packagist.org/search/?tags=mysql">#MySQL</a>  
-<a href="https://packagist.org/search/?tags=database">#Database</a>  
-<a href="https://packagist.org/search/?tags=performance-monitoring">#PerformanceMonitoring</a>  
-<a href="https://packagist.org/search/?tags=laravel">#Laravel</a>  
-<a href="https://packagist.org/search/?tags=php">#PHP</a>  
-<a href="https://packagist.org/search/?tags=query-optimization">#QueryOptimization</a>  
-<a href="https://packagist.org/search/?tags=mysql-admin">#MySQLAdmin</a>  
-<a href="https://packagist.org/search/?tags=server-monitoring">#ServerMonitoring</a>  
-<a href="https://packagist.org/search/?tags=devops">#DevOps</a>  
-<a href="https://packagist.org/search/?tags=database-management">#DatabaseManagement</a>
+<a href="https://packagist.org/search/?tags=mysql">#MySQL</a>    
+<a href="https://packagist.org/search/?tags=database">#Database</a>    
+<a href="https://packagist.org/search/?tags=performance-monitoring">#PerformanceMonitoring</a>    
+<a href="https://packagist.org/search/?tags=laravel">#Laravel</a>    
+<a href="https://packagist.org/search/?tags=php">#PHP</a>    
+<a href="https://packagist.org/search/?tags=query-optimization">#QueryOptimization</a>    
+<a href="https://packagist.org/search/?tags=mysql-admin">#MySQLAdmin</a>    
+<a href="https://packagist.org/search/?tags=server-monitoring">#ServerMonitoring</a>    
+<a href="https://packagist.org/search/?tags=devops">#DevOps</a>    
+<a href="https://packagist.org/search/?tags=database-management">#DatabaseManagement</a> 
 </p>  
 
 ## **You may also find our other useful package:**  
