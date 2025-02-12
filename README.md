@@ -11,7 +11,7 @@ The **mysqlinfo** package provides valuable insights into your MySQL database, s
 This package does not include any built-in security measures and is intended for admin use only. It exposes sensitive database details and query execution data, which could pose a security risk if accessed by unauthorized users.Ensure that this package is only used in a secure environment and not exposed to public or unauthorized access. 
 
 # **Documentation**  
-- [Featured](#features)  
+- [Features](#features)  
 - [Supported Versions](#supported-versions)  
 - [Installation](#installation)  
   - [Commands](#commands)  
