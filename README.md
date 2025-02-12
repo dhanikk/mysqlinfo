@@ -10,6 +10,19 @@ The **mysqlinfo** package provides valuable insights into your MySQL database, s
 ## **⚠️ Security Warning**
 This package does not include any built-in security measures and is intended for admin use only. It exposes sensitive database details and query execution data, which could pose a security risk if accessed by unauthorized users.Ensure that this package is only used in a secure environment and not exposed to public or unauthorized access. 
 
+<p>🏷️ 
+<a href="https://packagist.org/search/?tags=mysql">#MySQL</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=database">#Database</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=performance-monitoring">#PerformanceMonitoring</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=laravel">#Laravel</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=php">#PHP</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=query-optimization">#QueryOptimization</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=mysql-admin">#MySQLAdmin</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=server-monitoring">#ServerMonitoring</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=devops">#DevOps</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=database-management">#DatabaseManagement</a>  
+</p> 
+
 # **Documentation**  
 - [Features](#features)  
 - [Supported Versions](#supported-versions)  
@@ -41,20 +54,7 @@ Run the following command to publish the vendor files:
 
 ## **Accessing the Plugin**  
 Once installed, open the following URL in your browser to check the plugin:  
-<pre><code class="language-bash">localhost:8000/mysql-info</code></pre>  
-
-<p>🏷️ 
-<a href="https://packagist.org/search/?tags=mysql">#MySQL</a>&nbsp;  
-<a href="https://packagist.org/search/?tags=database">#Database</a>&nbsp;  
-<a href="https://packagist.org/search/?tags=performance-monitoring">#PerformanceMonitoring</a>&nbsp;  
-<a href="https://packagist.org/search/?tags=laravel">#Laravel</a>&nbsp;  
-<a href="https://packagist.org/search/?tags=php">#PHP</a>&nbsp;  
-<a href="https://packagist.org/search/?tags=query-optimization">#QueryOptimization</a>&nbsp;  
-<a href="https://packagist.org/search/?tags=mysql-admin">#MySQLAdmin</a>&nbsp;  
-<a href="https://packagist.org/search/?tags=server-monitoring">#ServerMonitoring</a>&nbsp;  
-<a href="https://packagist.org/search/?tags=devops">#DevOps</a>&nbsp;  
-<a href="https://packagist.org/search/?tags=database-management">#DatabaseManagement</a>  
-</p>  
+<pre><code class="language-bash">localhost:8000/mysql-info</code></pre>   
 
 ## **Contributing**  
 We welcome contributions from the community! Feel free to **Fork** the repository and contribute to this module. You can also create a pull request, and we will merge your changes into the main branch. See [CONTRIBUTING](https://github.com/dhanikk/phpinfo/blob/main/CONTRIBUTING.md) for details.  
