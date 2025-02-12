@@ -57,10 +57,10 @@ Once installed, open the following URL in your browser to check the plugin:
 <pre><code class="language-bash">localhost:8000/mysql-info</code></pre>   
 
 ## **Contributing**  
-We welcome contributions from the community! Feel free to **Fork** the repository and contribute to this module. You can also create a pull request, and we will merge your changes into the main branch. See [CONTRIBUTING](https://github.com/dhanikk/phpinfo/blob/main/CONTRIBUTING.md) for details.  
+We welcome contributions from the community! Feel free to **Fork** the repository and contribute to this module. You can also create a pull request, and we will merge your changes into the main branch. See [CONTRIBUTING](https://github.com/dhanikk/mysqlinfo/blob/main/CONTRIBUTING.md) for details.  
 
 ## **Security Vulnerabilities**  
-Please review our [Security Policy](https://github.com/dhanikk/phpinfo/security/policy) on how to report security vulnerabilities.  
+Please review our [Security Policy](https://github.com/dhanikk/mysqlinfo/security/policy) on how to report security vulnerabilities.  
 
 ## **License**  
 This package is open-source and available under the MIT License. See the [LICENSE](https://github.com/dhanikk/mysqlinfo/blob/main/LICENSE) file for details.  
