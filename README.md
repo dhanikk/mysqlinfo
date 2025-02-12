@@ -59,9 +59,6 @@ Once installed, open the following URL in your browser to check the plugin:
 ## **Contributing**  
 We welcome contributions from the community! Feel free to **Fork** the repository and contribute to this module. You can also create a pull request, and we will merge your changes into the main branch. See [CONTRIBUTING](https://github.com/dhanikk/phpinfo/blob/main/CONTRIBUTING.md) for details.  
 
-## **Changelog**  
-Please see [CHANGELOG](https://github.com/dhanikk/phpinfo/blob/main/CHANGELOG.md) for more information on what has changed recently.  
-
 ## **Security Vulnerabilities**  
 Please review our [Security Policy](https://github.com/dhanikk/phpinfo/security/policy) on how to report security vulnerabilities.  
 
