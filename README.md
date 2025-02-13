@@ -71,7 +71,7 @@ To test this package, run the following test command:
 
 ## **Get Support**  
 - Feel free to [contact us](https://www.itpathsolutions.com/contact-us/) if you have any questions.  
-- If you find this project helpful, please give us a ⭐ [Star](https://packagist.org/packages/itpathsolutions/mysqlinfo).  
+- If you find this project helpful, please give us a ⭐ [Star](https://github.com/dhanikk/mysqlinfo/stargazers).  
 
 ## **You may also find our other useful package:**  
 [PHP Info Package 🚀](https://packagist.org/packages/itpathsolutions/phpinfo)  
