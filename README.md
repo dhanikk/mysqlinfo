@@ -11,16 +11,16 @@ The **mysqlinfo** package provides valuable insights into your MySQL database, s
 This package does not include any built-in security measures and is intended for admin use only. It exposes sensitive database details and query execution data, which could pose a security risk if accessed by unauthorized users.Ensure that this package is only used in a secure environment and not exposed to public or unauthorized access. 
 
 <p>🏷️ 
-<a href="https://packagist.org/search/?tags=mysql">#MySQL</a>&nbsp;  
-<a href="https://packagist.org/search/?tags=database">#Database</a>&nbsp;  
-<a href="https://packagist.org/search/?tags=performance-monitoring">#PerformanceMonitoring</a>&nbsp;  
-<a href="https://packagist.org/search/?tags=laravel">#Laravel</a>&nbsp;  
-<a href="https://packagist.org/search/?tags=php">#PHP</a>&nbsp;  
-<a href="https://packagist.org/search/?tags=query-optimization">#QueryOptimization</a>&nbsp;  
-<a href="https://packagist.org/search/?tags=mysql-admin">#MySQLAdmin</a>&nbsp;  
-<a href="https://packagist.org/search/?tags=server-monitoring">#ServerMonitoring</a>&nbsp;  
-<a href="https://packagist.org/search/?tags=devops">#DevOps</a>&nbsp;  
-<a href="https://packagist.org/search/?tags=database-management">#DatabaseManagement</a>  
+<a href="https://packagist.org/search/?tags=mysql" target="_blank" rel="noopener noreferrer">#MySQL</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=database" target="_blank" rel="noopener noreferrer">#Database</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=performance-monitoring" target="_blank" rel="noopener noreferrer">#PerformanceMonitoring</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=laravel" target="_blank" rel="noopener noreferrer">#Laravel</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=php" target="_blank" rel="noopener noreferrer">#PHP</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=query-optimization" target="_blank" rel="noopener noreferrer">#QueryOptimization</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=mysql-admin" target="_blank" rel="noopener noreferrer">#MySQLAdmin</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=server-monitoring" target="_blank" rel="noopener noreferrer">#ServerMonitoring</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=devops" target="_blank" rel="noopener noreferrer">#DevOps</a>&nbsp;  
+<a href="https://packagist.org/search/?tags=database-management" target="_blank" rel="noopener noreferrer">#DatabaseManagement</a>  
 </p> 
 
 # **Documentation**  
@@ -57,23 +57,22 @@ Once installed, open the following URL in your browser to check the plugin:
 <pre><code class="language-bash">localhost:8000/mysql-info</code></pre>   
 
 ## **Contributing**  
-We welcome contributions from the community! Feel free to **Fork** the repository and contribute to this module. You can also create a pull request, and we will merge your changes into the main branch. See [CONTRIBUTING](https://github.com/dhanikk/mysqlinfo/blob/main/CONTRIBUTING.md) for details.  
+We welcome contributions from the community! Feel free to **Fork** the repository and contribute to this module. You can also create a pull request, and we will merge your changes into the main branch. See <a href="https://github.com/dhanikk/mysqlinfo/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">CONTRIBUTING</a> for details.  
 
 ## **Security Vulnerabilities**  
-Please review our [Security Policy](https://github.com/dhanikk/mysqlinfo/security/policy) on how to report security vulnerabilities.  
+Please review our <a href="https://github.com/dhanikk/mysqlinfo/blob/main/security/policy" target="_blank" rel="noopener noreferrer">Security Policy</a> on how to report security vulnerabilities.  
 
 ## **License**  
-This package is open-source and available under the MIT License. See the [LICENSE](https://github.com/dhanikk/mysqlinfo/blob/main/LICENSE) file for details.  
+This package is open-source and available under the MIT License. See the <a href="https://github.com/dhanikk/mysqlinfo/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">LICENSE</a> file for details.  
 
 ## **Testing**  
 To test this package, run the following test command:  
 <pre><code class="language-bash">composer test</code></pre>   
 
 ## **Get Support**  
-- Feel free to [contact us](https://www.itpathsolutions.com/contact-us/) if you have any questions.  
-- If you find this project helpful, please give us a ⭐ [Star](https://github.com/dhanikk/mysqlinfo/stargazers).  
+- Feel free to <a href="https://www.itpathsolutions.com/contact-us/" target="_blank" rel="noopener noreferrer">contact us</a> if you have any questions.  
+- If you find this project helpful, please give us a ⭐ <a href="https://github.com/dhanikk/mysqlinfo/stargazers" target="_blank" rel="noopener noreferrer">Star</a>.  
 
 ## **You may also find our other useful package:**  
-[PHP Info Package 🚀](https://packagist.org/packages/itpathsolutions/phpinfo)  
-
-## **📩 Need help? Contact us at enquiry@itpathsolutions.com.**   
+[PHP Info Package 🚀](https://packagist.org/packages/itpathsolutions/phpinfo){:target="_blank" rel="noopener noreferrer"}    
+[AUTH Info Package 🚀](https://packagist.org/packages/itpathsolutions/authinfo){:target="_blank" rel="noopener noreferrer"}    
