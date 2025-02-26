@@ -3,7 +3,7 @@
     namespace Itpathsolutions\Mysqlinfo;
     use Illuminate\Support\ServiceProvider;
     class MysqlInfoServiceProvider extends ServiceProvider {
-        public function boot()
+        public function boot(): void
         {
             $this->loadRoutesFrom(__DIR__.'/routes/web.php');
             $this->loadViewsFrom(__DIR__.'/resources/views', 'mysqlinfo');

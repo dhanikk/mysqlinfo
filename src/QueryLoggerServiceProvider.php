@@ -2,11 +2,13 @@
 
 namespace Itpathsolutions\Mysqlinfo;
 
+use Carbon\Carbon;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Cache;
-use File;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Storage;
 
 class QueryLoggerServiceProvider extends ServiceProvider
 {
@@ -23,13 +25,13 @@ class QueryLoggerServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        if (config('app.debug')) { // Enable query logging only in debug mode
+        if (Config::get('app.debug')) { // Enable query logging only in debug mode
             DB::listen(function ($query){
                 static $slowQueryThreshold = 100;
                 static $modelTables = null;
 
                 if ($modelTables === null) {
-                    $modelTables = collect(File::allFiles(app_path('Models')))
+                    $modelTables = collect(File::allFiles(App::path('Models')))
                         ->map(function ($file){
                             $namespace = 'App\\Models\\';
                             $class = $namespace . pathinfo($file->getFilename(), PATHINFO_FILENAME);
@@ -50,37 +52,49 @@ class QueryLoggerServiceProvider extends ServiceProvider
 
                 // Extract the table name from the query
                 $table = '';
-                if (preg_match('/from `(\w+)`/i', $query->sql, $matches)) {
-                    $table = $matches[1];
-                } elseif (preg_match('/join `(\w+)`/i', $query->sql, $matches)) {
-                    $table = $matches[1];
+                if (is_object($query) && property_exists($query, 'sql') && is_string($query->sql)) {
+                    if (preg_match('/from `(\w+)`/i', $query->sql, $matches)) {
+                        $table = $matches[1];
+                    } elseif (preg_match('/join `(\w+)`/i', $query->sql, $matches)) {
+                        $table = $matches[1];
+                    }
                 }
 
                 // Skip queries not related to model tables
-                $tableNames = array_column($modelTables, 'table');
+                $tableNames = is_array($modelTables) ? array_column($modelTables, 'table') : [];
                 if (!in_array($table, $tableNames)) {
                     return;
                 }
 
                 // Format the SQL query with bindings
-                $sqlWithBindings = vsprintf(str_replace('?', '%s', $query->sql), array_map(function ($binding) {
-                    return is_numeric($binding) ? $binding : "'$binding'";
-                }, $query->bindings));
+                $sqlWithBindings = '';
+                if (is_object($query) && isset($query->sql, $query->bindings) && is_string($query->sql) &&  is_array($query->bindings) ) {
+                    $sqlWithBindings = vsprintf(str_replace('?', '%s', (string) $query->sql), array_map(function ($binding) { // Cast to string for safety
+                            return is_scalar($binding) ? (is_numeric($binding) ? $binding : "'$binding'") : 'NULL'; // Convert only scalar values, otherwise return 'NULL' for objects/arrays
+                        }, $query->bindings)
+                    );
+                }
                 
                 $queryLogs = [];
-                $logFilePath = storage_path('logs/query_logs.json');
+                $logFilePath = Storage::path('logs/query_logs.json');
                 if (file_exists($logFilePath)) {
                     $existingLogs = file_get_contents($logFilePath);
-                    $queryLogs = json_decode($existingLogs, true) ?? [];
+                    $decodedLogs = json_decode(is_string($existingLogs) ? $existingLogs : '', true);                    
+                    $queryLogs = is_array($decodedLogs) ? $decodedLogs : [];
                 }
-                $queryLogs[] = [
-                    'sql' => $sqlWithBindings,
-                    'bindings' => $query->bindings,
-                    'time' => $query->time,
-                    'timestamp' => now(),
-                    'model' => $modelTables[0]['model'],
-                    'threshold' => ($query->time > $slowQueryThreshold) ? 'slow' : null,
-                ];
+
+                // Ensure $query is an object and has the necessary properties
+                if (is_object($query) && isset($query->bindings, $query->time)) {
+                    $modelName = is_array($modelTables) && !empty($modelTables) && isset($modelTables[0]) && is_array($modelTables[0]) ? $modelName = $modelTables[0]['model'] ?? null : null;
+                    $queryLogs[] = [
+                        'sql' => $sqlWithBindings,
+                        'bindings' => is_array($query->bindings) ? $query->bindings : [],
+                        'time' => is_numeric($query->time) ? $query->time : 0,
+                        'timestamp' => Carbon::now(),
+                        'model' => $modelName,
+                        'threshold' => ($query->time > $slowQueryThreshold) ? 'slow' : null,
+                    ];
+                }
 
                 // Limit logs to the last 100 queries
                 if (count($queryLogs) > 100) {
