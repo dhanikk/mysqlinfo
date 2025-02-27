@@ -23,20 +23,32 @@ This package does not include any built-in security measures and is intended for
 <a href="https://packagist.org/search/?tags=database-management" target="_blank" rel="noopener noreferrer">#DatabaseManagement</a>  
 </p> 
 
-# **Documentation**  
-- [Features](#features)  
-- [Supported Versions](#supported-versions)  
-- [Installation](#installation)  
-  - [Commands](#commands)  
-    - [Composer Require](#composer-require)  
-    - [Vendor Publish](#vendor-publish)  
-- [Accessing the Plugin](#accessing-the-plugin) 
+## Documentation
+- [Features](#features)
+- [Supported Versions](#supported-versions)
+- [Installation](#installation)
+    - [Commands](#commands)
+        - [Vendor Publish](#vendor-publish)
+        - [Accessing the Plugin](#accessing-the-plugin)
+- [FAQs](#faqs)
+- [Contributing](#contributing)
+- [Security Vulnerabilities](#security-vulnerabilities)
+- [License](#license)
+- [Testing](#testing)
+- [Support](#get-support)
 
 ## **Features:**  
-- **Real-time MySQL database performance monitoring.**  
-- **View database connection details, table sizes, row counts, and indexes.**  
-- **Track query performance and execution times.**  
-- **Analyze server status and database schema details, including table collations and supported character sets.**  
+- **Real-time MySQL Performance Monitoring** – Track live database performance and query execution.  
+- **Database Connection Insights** – View connection details, active users, and session statistics.  
+- **Table & Index Analysis** – Monitor table sizes, row counts, indexes, and schema details.  
+- **Slow Query Detection** – Identify and optimize slow-running queries for better efficiency.  
+- **Query Execution Logging** – Log executed queries, their execution time, and performance impact.  
+- **Storage & Fragmentation Optimization** – Detect fragmented tables and optimize storage.  
+- **InnoDB Buffer & Cache Analysis** – Monitor buffer pool usage and cache efficiency.  
+- **Query Load Monitoring** – Analyze query load in real-time and track database stress.  
+- **Laravel Log Integration** – Store query performance logs for historical analysis.  
+- **Security & Access Control** – Restrict access to database insights for admin use only.  
+
 
 # **Supported Versions:**  
 - **PHP:** ^8.0  
@@ -54,7 +66,35 @@ Run the following command to publish the vendor files:
 
 ## **Accessing the Plugin**  
 Once installed, open the following URL in your browser to check the plugin:  
-<pre><code class="language-bash">localhost:8000/mysql-info</code></pre>   
+<pre><code class="language-bash">localhost:8000/mysql-info</code></pre>  
+
+
+## **FAQs**  
+
+### 1️. What does this package do?  
+This package provides real-time insights into your MySQL database, including connection details, table sizes, row counts, indexes, query performance, and server status. It helps monitor and optimize database performance.  
+
+## 2. How do I install the package?  
+📦 Installing is simple! Run the following command in your terminal:  
+<pre><code class="language-bash">composer require itpathsolutions/mysqlinfo</code></pre>  
+
+## 3. Which Laravel versions are supported?  
+This package supports **Laravel 9, 10, and 11** with **PHP 8+** compatibility.  
+
+## 4. How do I access MySQL insights?  
+You can access MySQL performance insights via:  
+👉 `localhost:8000/mysql-info`  
+
+## 5. How do I update the package to the latest version?  
+Run the following command to update:  
+<pre><code class="language-bash">composer update itpathsolutions/mysqlinfo</code></pre>  
+
+## 6. Can I contribute to this package?  
+🤝 Absolutely! Contributions are welcome. See the [CONTRIBUTING](https://github.com/dhanikk/mysqlinfo/blob/main/CONTRIBUTING.md) guidelines for details.  
+
+## 7. Where can I get support?  
+For any support or queries, contact us via [IT Path Solutions](https://www.itpathsolutions.com/contact-us/).  
+
 
 ## **Contributing**  
 We welcome contributions from the community! Feel free to **Fork** the repository and contribute to this module. You can also create a pull request, and we will merge your changes into the main branch. See <a href="https://github.com/dhanikk/mysqlinfo/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">CONTRIBUTING</a> for details.  
@@ -74,5 +114,7 @@ To test this package, run the following test command:
 - If you find this project helpful, please give us a ⭐ <a href="https://github.com/dhanikk/mysqlinfo/stargazers" target="_blank" rel="noopener noreferrer">Star</a>.  
 
 ## **You may also find our other useful package:**  
-[PHP Info Package 🚀](https://packagist.org/packages/itpathsolutions/phpinfo){:target="_blank" rel="noopener noreferrer"}    
-[AUTH Info Package 🚀](https://packagist.org/packages/itpathsolutions/authinfo){:target="_blank" rel="noopener noreferrer"}    
+<a href="https://packagist.org/packages/itpathsolutions/phpinfo" target="_blank">PHP Info Package 🚀</a>  
+<a href="https://packagist.org/packages/itpathsolutions/authinfo" target="_blank">AUTH Info Package 🚀</a>
+<a href="https://packagist.org/packages/itpathsolutions/role-wise-session-manager" target="_blank">Role Wise Session Manager Package 🚀</a>
+<a href="https://packagist.org/packages/itpathsolutions/chatbot" target="_blank">Chatbot Package 🚀</a>  
