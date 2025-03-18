@@ -118,3 +118,4 @@ To test this package, run the following test command:
 <a href="https://packagist.org/packages/itpathsolutions/authinfo" target="_blank">AUTH Info Package 🚀</a>  
 <a href="https://packagist.org/packages/itpathsolutions/role-wise-session-manager" target="_blank">Role Wise Session Manager Package 🚀</a>  
 <a href="https://packagist.org/packages/itpathsolutions/chatbot" target="_blank">Chatbot Package 🚀</a>  
+<a href="https://packagist.org/packages/itpathsolutions/redisinfo" target="_blank">Redis Info Package 🚀</a>  
